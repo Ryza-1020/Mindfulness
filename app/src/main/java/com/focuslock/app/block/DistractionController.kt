@@ -94,8 +94,6 @@ class DistractionController(private val context: Context) {
             .allowReminders(false)
             .allowEvents(false)
             .hideAllVisualEffects()
-            // Keep the notification shade list visible so FocusLock's own timer notification stays reachable.
-            .showVisualEffect(ZenPolicy.VISUAL_EFFECT_NOTIFICATION_LIST, true)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             b.allowConversations(ZenPolicy.CONVERSATION_SENDERS_NONE)
         }
