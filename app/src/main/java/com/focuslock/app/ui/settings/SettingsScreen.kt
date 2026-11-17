@@ -175,6 +175,13 @@ fun SettingsScreen(vm: SettingsViewModel, onBack: () -> Unit) {
                 checked = s.blockNotifications,
                 onCheckedChange = { v -> vm.update { it.copy(blockNotifications = v) } },
             )
+            SwitchRow(
+                title = stringResource(R.string.settings_silence_ringer),
+                description = stringResource(R.string.settings_silence_ringer_desc),
+                checked = s.silenceRinger,
+                enabled = s.blockNotifications,
+                onCheckedChange = { v -> vm.update { it.copy(silenceRinger = v) } },
+            )
             Text(
                 stringResource(R.string.settings_calls),
                 style = MaterialTheme.typography.bodyLarge,

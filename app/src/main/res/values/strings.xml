@@ -94,6 +94,8 @@
     <string name="settings_section_block">השתקת הסחות דעת</string>
     <string name="settings_block_notifications">השתקת התראות ושיחות בזמן עבודה</string>
     <string name="settings_block_notifications_desc">מפעיל מצב \"נא לא להפריע\" של Android. שיחות נכנסות עדיין מתקבלות – הן רק לא מצלצלות ויופיעו כשיחות שלא נענו.</string>
+    <string name="settings_silence_ringer">להעביר את הטלפון למצב שקט</string>
+    <string name="settings_silence_ringer_desc">כמו לחיצה על "שקט" בטלפון: בלי צלצול ובלי רטט. בסיום הסשן הצלצול חוזר למצבו הקודם. כשזה פעיל, גם שיחות מהחריגים שלמטה לא יצלצלו.</string>
     <string name="settings_calls">שיחות שיעברו בכל זאת</string>
     <string name="calls_none">אף אחד</string>
     <string name="calls_starred">אנשי קשר מועדפים (כוכב)</string>

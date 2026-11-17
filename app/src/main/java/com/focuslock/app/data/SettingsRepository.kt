@@ -24,6 +24,8 @@ data class AppSettings(
     val blockNotifications: Boolean = true,
     val callsPolicy: CallsPolicy = CallsPolicy.STARRED,
     val allowRepeatCallers: Boolean = true,
+    /** Switch the ringer to silent during a session (like pressing the phone's silent mode). */
+    val silenceRinger: Boolean = true,
     /** Default: silence stays on while paused, so a pause doesn't turn into a distraction. */
     val keepSilenceDuringPause: Boolean = true,
     val screenPinning: Boolean = true,
@@ -43,6 +45,7 @@ class SettingsRepository(context: Context) {
         val blockNotifications = booleanPreferencesKey("block_notifications")
         val callsPolicy = stringPreferencesKey("calls_policy")
         val repeatCallers = booleanPreferencesKey("repeat_callers")
+        val silenceRinger = booleanPreferencesKey("silence_ringer")
         val keepSilencePaused = booleanPreferencesKey("keep_silence_paused")
         val pinning = booleanPreferencesKey("screen_pinning")
         val keepScreenOn = booleanPreferencesKey("keep_screen_on")
@@ -68,6 +71,7 @@ class SettingsRepository(context: Context) {
             blockNotifications = p[Keys.blockNotifications] ?: d.blockNotifications,
             callsPolicy = p[Keys.callsPolicy]?.let { runCatching { CallsPolicy.valueOf(it) }.getOrNull() } ?: d.callsPolicy,
             allowRepeatCallers = p[Keys.repeatCallers] ?: d.allowRepeatCallers,
+            silenceRinger = p[Keys.silenceRinger] ?: d.silenceRinger,
             keepSilenceDuringPause = p[Keys.keepSilencePaused] ?: d.keepSilenceDuringPause,
             screenPinning = p[Keys.pinning] ?: d.screenPinning,
             keepScreenOn = p[Keys.keepScreenOn] ?: d.keepScreenOn,
@@ -82,6 +86,7 @@ class SettingsRepository(context: Context) {
         p[Keys.blockNotifications] = s.blockNotifications
         p[Keys.callsPolicy] = s.callsPolicy.name
         p[Keys.repeatCallers] = s.allowRepeatCallers
+        p[Keys.silenceRinger] = s.silenceRinger
         p[Keys.keepSilencePaused] = s.keepSilenceDuringPause
         p[Keys.pinning] = s.screenPinning
         p[Keys.keepScreenOn] = s.keepScreenOn

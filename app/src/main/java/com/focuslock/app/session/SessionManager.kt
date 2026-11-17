@@ -240,6 +240,6 @@ class SessionManager(
             distraction.deactivate()
             return DndStatus.PAUSED
         }
-        return distraction.activate(DndConfig(cfg.callsPolicy, cfg.allowRepeatCallers))
+        return distraction.activate(DndConfig(cfg.callsPolicy, cfg.allowRepeatCallers, cfg.silenceRinger))
     }
 }

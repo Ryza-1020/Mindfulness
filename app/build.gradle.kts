@@ -13,18 +13,30 @@ android {
         applicationId = "com.focuslock.app"
         minSdk = 26          // Android 8.0 – java.time, notification channels
         targetSdk = 35       // Android 15
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.1.0"
+    }
+
+    // One fixed key for every build (local and GitHub), so a new APK installs as an update over the
+    // previous one and keeps your statistics. Personal-use key – don't use it for anything published.
+    signingConfigs {
+        create("personal") {
+            storeFile = file("focuslock.keystore")
+            storePassword = "focuslock"
+            keyAlias = "focuslock"
+            keyPassword = "focuslock"
+        }
     }
 
     buildTypes {
+        debug {
+            signingConfig = signingConfigs.getByName("personal")
+        }
         release {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            // Personal-use build: signed with the debug key so the APK installs directly.
-            // Replace with your own signingConfig before publishing anywhere.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("personal")
         }
     }
 
