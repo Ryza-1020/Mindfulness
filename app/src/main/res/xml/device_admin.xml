@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No admin policies are used. Lock Task allow-listing only needs device-owner status. -->
+<device-admin>
+    <uses-policies />
+</device-admin>

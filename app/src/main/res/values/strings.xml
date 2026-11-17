@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FocusLock</string>
+    <string name="device_admin_description">משמש רק במכשיר ייעודי שהוגדר ידנית כמכשיר מנוהל, כדי לאפשר נעילת מסך מלאה בזמן עבודה.</string>
+
+    <!-- General -->
+    <string name="back">חזרה</string>
+    <string name="cancel">ביטול</string>
+    <string name="save">שמירה</string>
+    <string name="delete">מחיקה</string>
+    <string name="ok">אישור</string>
+    <string name="minutes_short">%1$d דק׳</string>
+    <string name="minutes_long">%1$d דקות</string>
+
+    <!-- Home -->
+    <string name="home_title">זמן להתרכז</string>
+    <string name="home_duration_label">כמה זמן?</string>
+    <string name="home_custom">אחר</string>
+    <string name="home_custom_title">משך מותאם אישית</string>
+    <string name="home_custom_hint">דקות (1–600)</string>
+    <string name="home_task_label">על מה אני עובד עכשיו? (לא חובה)</string>
+    <string name="home_start">התחל עבודה</string>
+    <string name="home_schedule">תזמון מראש</string>
+    <string name="home_stats">נתונים</string>
+    <string name="home_settings">הגדרות</string>
+    <string name="home_dnd_missing">השתקת התראות עדיין לא הופעלה. הקש כדי לאשר גישה ל\"נא לא להפריע\".</string>
+
+    <!-- Active session -->
+    <string name="session_pause">השהיה</string>
+    <string name="session_paused_title">העבודה מושהית</string>
+    <string name="session_remaining">נותרו</string>
+    <string name="session_resume">המשך עבודה</string>
+    <string name="session_finish_early">סיום מוקדם</string>
+    <string name="session_keep_silence_paused">להמשיך להשתיק התראות בזמן ההשהיה</string>
+    <string name="session_finish_confirm_title">לסיים את הסשן עכשיו?</string>
+    <string name="session_finish_confirm_text">הזמן שכבר עבדת יישמר בנתונים.</string>
+    <string name="session_finish_confirm_yes">כן, לסיים</string>
+    <string name="session_finish_confirm_no">חזרה לעבודה</string>
+    <string name="session_back_blocked">כדי לצאת, לחץ \"השהיה\" ואז \"סיום מוקדם\".</string>
+    <string name="status_dnd_active">השתקה פעילה</string>
+    <string name="status_dnd_off">השתקה כבויה</string>
+    <string name="status_dnd_no_permission">השתקה לא פעילה – חסרה הרשאה</string>
+    <string name="status_dnd_paused">השתקה הושהתה</string>
+    <string name="status_dnd_error">השתקה נכשלה</string>
+    <string name="status_lock_none">ללא הצמדת מסך</string>
+    <string name="status_lock_pinned">מסך מוצמד</string>
+    <string name="status_lock_locked">נעילה מנוהלת פעילה</string>
+    <string name="session_repin">הצמד מסך</string>
+
+    <!-- Completion -->
+    <string name="done_title_completed">כל הכבוד! השלמת זמן עבודה ממוקדת.</string>
+    <string name="done_title_early">הסשן הסתיים.</string>
+    <string name="done_subtitle_early">כל דקה של ריכוז נחשבת.</string>
+    <string name="done_worked">זמן עבודה בפועל: %1$s</string>
+    <string name="done_again">סשן נוסף</string>
+    <string name="done_home">חזרה למסך הבית</string>
+
+    <!-- Schedule -->
+    <string name="schedule_title">סשנים מתוזמנים</string>
+    <string name="schedule_empty">אין עדיין סשנים מתוזמנים. הקש על + כדי להוסיף.</string>
+    <string name="schedule_add">סשן מתוזמן חדש</string>
+    <string name="schedule_edit">עריכת סשן מתוזמן</string>
+    <string name="schedule_task">שם המשימה</string>
+    <string name="schedule_duration">משך העבודה</string>
+    <string name="schedule_start_time">שעת התחלה</string>
+    <string name="schedule_start_date">תאריך התחלה</string>
+    <string name="schedule_repeat">חזרתיות</string>
+    <string name="repeat_once">חד־פעמי</string>
+    <string name="repeat_daily">כל יום</string>
+    <string name="repeat_workdays">ימי עבודה (א׳–ה׳)</string>
+    <string name="repeat_custom">ימים נבחרים</string>
+    <string name="schedule_next">הפעלה הבאה: %1$s</string>
+    <string name="schedule_disabled">כבוי</string>
+    <string name="schedule_delete_confirm">למחוק את הסשן המתוזמן?</string>
+    <string name="schedule_untitled">עבודה ממוקדת</string>
+    <string name="schedule_no_days">יש לבחור לפחות יום אחד.</string>
+    <string name="schedule_past">המועד שנבחר כבר עבר.</string>
+    <string name="schedule_exact_missing">אין הרשאה ל\"התראות ותזכורות\" מדויקות, ולכן סשן מתוזמן עלול להתחיל באיחור של כמה דקות. הקש כדי לאשר.</string>
+
+    <!-- Stats -->
+    <string name="stats_title">נתוני עבודה</string>
+    <string name="stats_today">היום</string>
+    <string name="stats_week">7 הימים האחרונים</string>
+    <string name="stats_completed">סשנים שהושלמו</string>
+    <string name="stats_early">סשנים שהסתיימו מוקדם</string>
+    <string name="stats_ratio">ביצוע מתוך התכנון</string>
+    <string name="stats_chart_title">דקות עבודה ביום</string>
+    <string name="stats_empty">עוד אין נתונים. הסשן הראשון שלך יופיע כאן.</string>
+    <string name="stats_early_note">סיום מוקדם הוא חלק טבעי מהעבודה – הוא לא נחשב כישלון.</string>
+    <string name="stats_all_time">סה״כ מאז ההתחלה: %1$s</string>
+
+    <!-- Settings -->
+    <string name="settings_title">הגדרות</string>
+    <string name="settings_section_block">השתקת הסחות דעת</string>
+    <string name="settings_block_notifications">השתקת התראות ושיחות בזמן עבודה</string>
+    <string name="settings_block_notifications_desc">מפעיל מצב \"נא לא להפריע\" של Android. שיחות נכנסות עדיין מתקבלות – הן רק לא מצלצלות ויופיעו כשיחות שלא נענו.</string>
+    <string name="settings_calls">שיחות שיעברו בכל זאת</string>
+    <string name="calls_none">אף אחד</string>
+    <string name="calls_starred">אנשי קשר מועדפים (כוכב)</string>
+    <string name="calls_contacts">כל אנשי הקשר</string>
+    <string name="settings_repeat_callers">לאפשר מתקשר חוזר (אותו מספר תוך 15 דקות)</string>
+    <string name="settings_block_note">שעונים מעוררים ממשיכים לפעול. אפליקציות שהגדרת בהגדרות המכשיר כ\"מותר לעקוף את נא לא להפריע\" ימשיכו להתריע. שיחות חירום אינן נחסמות.</string>
+    <string name="settings_section_lock">נעילת מסך</string>
+    <string name="settings_pinning">הצמדת מסך בזמן עבודה</string>
+    <string name="settings_pinning_desc">בתחילת כל סשן Android יבקש לאשר הצמדה. במצב מוצמד אי אפשר לעבור לאפליקציות אחרות או לפתוח התראות. היציאה מהצמדה אפשרית תמיד: בניווט במחוות – החלקה למעלה והחזקה; בניווט בכפתורים – לחיצה ארוכה על \"חזרה\" ו\"סקירה\" יחד.</string>
+    <string name="settings_pinning_setup">אם ההצמדה לא מופעלת, יש להפעיל אותה בהגדרות המכשיר: אבטחה ← הצמדת אפליקציה (השם משתנה לפי היצרן).</string>
+    <string name="settings_open_security">פתיחת הגדרות האבטחה</string>
+    <string name="settings_managed_available">מכשיר מנוהל: נעילה מלאה (Lock Task) זמינה ותופעל במקום הצמדה רגילה.</string>
+    <string name="settings_managed_unavailable">נעילה מנוהלת לא זמינה במכשיר זה. היא אפשרית רק במכשיר ייעודי שהוגדר ידנית כמכשיר מנוהל (ראה מדריך ההתקנה). במכשיר אישי רגיל משתמשים בהצמדת מסך.</string>
+    <string name="settings_remove_owner">הסרת FocusLock מניהול המכשיר</string>
+    <string name="settings_remove_owner_confirm">פעולה זו מבטלת את מצב הנעילה המנוהלת. להמשיך?</string>
+    <string name="settings_section_screen">מסך בזמן עבודה</string>
+    <string name="settings_keep_screen_on">להשאיר את המסך דולק</string>
+    <string name="settings_keep_screen_on_desc">כבוי: המסך ייכבה כרגיל והטיימר ימשיך לרוץ ברקע.</string>
+    <string name="settings_dim">תצוגה חסכונית (בהירות נמוכה)</string>
+    <string name="settings_section_schedule">תזמון</string>
+    <string name="settings_auto_start">להתחיל סשן מתוזמן אוטומטית</string>
+    <string name="settings_auto_start_desc">הטיימר וההשתקה יתחילו בזמן. Android לא מאפשר לפתוח מסך מלא מהרקע, לכן תופיע התראה לפתיחת הטיימר. כבוי: תופיע התראה עם כפתור \"התחל סשן\".</string>
+    <string name="settings_section_look">מראה</string>
+    <string name="theme_system">לפי המכשיר</string>
+    <string name="theme_light">בהיר</string>
+    <string name="theme_dark">כהה</string>
+    <string name="settings_section_permissions">הרשאות</string>
+    <string name="perm_granted">ניתנה</string>
+    <string name="perm_missing">לא ניתנה</string>
+    <string name="perm_grant">אישור</string>
+    <string name="perm_notifications">התראות</string>
+    <string name="perm_notifications_desc">להצגת הטיימר בשורת ההתראות ולתזכורות על סשנים מתוזמנים.</string>
+    <string name="perm_dnd">גישה ל\"נא לא להפריע\"</string>
+    <string name="perm_dnd_desc">מאפשרת להשתיק התראות ושיחות בזמן עבודה ולהחזיר את המצב בסיום. בחר FocusLock ברשימה והפעל.</string>
+    <string name="perm_exact">התראות ותזכורות (שעון מדויק)</string>
+    <string name="perm_exact_desc">כדי שסשן מתוזמן יתחיל בדיוק בזמן, ושהסשן יסתיים בדיוק באפס גם כשהמסך כבוי.</string>
+    <string name="perm_battery">פטור מחיסכון בסוללה (מומלץ)</string>
+    <string name="perm_battery_desc">בחלק מהמכשירים (כמו Xiaomi, Samsung) חיסכון אגרסיבי בסוללה עלול לעצור את הטיימר. בחר FocusLock ← \"ללא הגבלה\".</string>
+
+    <!-- Notifications -->
+    <string name="channel_session">טיימר עבודה</string>
+    <string name="channel_session_desc">הטיימר הפעיל. התראה שקטה.</string>
+    <string name="channel_schedule">סשנים מתוזמנים</string>
+    <string name="channel_schedule_desc">הודעה כשמגיע זמן סשן מתוזמן.</string>
+    <string name="channel_result">סיום סשן</string>
+    <string name="notif_running_title">עבודה ממוקדת</string>
+    <string name="notif_paused_title">העבודה מושהית</string>
+    <string name="notif_paused_text">נותרו %1$s</string>
+    <string name="notif_action_pause">השהיה</string>
+    <string name="notif_action_resume">המשך</string>
+    <string name="notif_completed_title">כל הכבוד! השלמת זמן עבודה ממוקדת.</string>
+    <string name="notif_completed_text">עבדת %1$s. הקש לפתיחה.</string>
+    <string name="notif_sched_started_title">הסשן המתוזמן התחיל: %1$s</string>
+    <string name="notif_sched_started_text">%1$s של עבודה ממוקדת. הקש כדי לפתוח את מסך הטיימר.</string>
+    <string name="notif_sched_prompt_title">הגיע הזמן להתרכז: %1$s</string>
+    <string name="notif_sched_prompt_text">סשן של %1$s מחכה לך.</string>
+    <string name="notif_sched_action_start">התחל סשן</string>
+    <string name="notif_sched_skipped_title">סשן מתוזמן דולג: %1$s</string>
+    <string name="notif_sched_skipped_text">כבר היה סשן פעיל באותו זמן.</string>
+</resources>
